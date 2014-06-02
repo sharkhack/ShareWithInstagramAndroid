@@ -1,4 +1,4 @@
-<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+<extension xmlns="http://ns.adobe.com/air/extension/14.0">
 	<id>com.azer.android.shareinstagram</id>
 	<versionNumber>1</versionNumber>
 	<platforms>
@@ -9,5 +9,17 @@
             	<finalizer>com.azer.android.ShareWithInstagramAndroid.ShInstagramExtension</finalizer> 							
 			</applicationDeployment>		
 		</platform>
+		
+	    <platform name="Android-x86"> 
+		 <applicationDeployment>			
+				<nativeLibrary>sharewithinstagramandroid.jar</nativeLibrary>
+				<initializer>com.azer.android.ShareWithInstagramAndroid.ShInstagramExtension</initializer> 
+            	<finalizer>com.azer.android.ShareWithInstagramAndroid.ShInstagramExtension</finalizer>				
+			</applicationDeployment>		
+		</platform>
+		
+		<platform name="default"> 
+	        <applicationDeployment/> 
+	    </platform> 
 	</platforms>
 </extension>

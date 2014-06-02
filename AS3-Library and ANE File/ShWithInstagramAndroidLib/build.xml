@@ -31,6 +31,8 @@
 						-package -target ane ${app.releasedir}/ShWithInstagramAndroid.ane ${app.extensionxmlfile} 
 						-swc ${app.swcfilename}
 						-platform Android-ARM library.swf sharewithinstagramandroid.jar
+						-platform Android-x86 library.swf sharewithinstagramandroid.jar
+						-platform default library.swf sharewithinstagramandroid.jar
 					"/>
 		</exec>
 		<delete file="${app.rootdir}/library.swf"/>
